@@ -11,9 +11,9 @@
 
 <p align="center">
   <a href="#türkçe-kısa-özet">Türkçe özeti</a> ·
-  <a href="#install">Kurulum</a> ·
+  <a href="#kurulum">Kurulum</a> ·
   <a href="#android">Android</a> ·
-  <a href="#troubleshooting">Sorun giderme</a> ·
+  <a href="#sorun-giderme">Sorun giderme</a> ·
   <a href="#english">English</a>
 </p>
 
@@ -21,9 +21,9 @@
   <a href="https://net-merge.org">Website</a> ·
   <a href="https://github.com/net-merge/net-merge/releases/latest">Download</a> ·
   <a href="#android">Android</a> ·
-  <a href="#install">Install</a> ·
-  <a href="#add-a-second-connection">Add a second connection</a> ·
-  <a href="#troubleshooting">Troubleshooting</a> ·
+  <a href="#kurulum">Install</a> ·
+  <a href="#ikinci-baglanti-ekleme">Add a second connection</a> ·
+  <a href="#sorun-giderme">Troubleshooting</a> ·
   <a href="docs/DEVELOPING.md">How it works</a>
 </p>
 
@@ -48,25 +48,25 @@
 </p>
 
 <p align="center">
-  <strong>Daha fazla kontrol mü istiyorsunuz? <a href="https://github.com/champdev-me/routengine">RoutEngine</a>, net-merge'in geliştirilmiş ticari sürümünü deneyin.</strong><br>
-  Her uygulama için bağlantıyı seçin, yedek ekleyin ve uygulama başına hız limiti veya veri kotası belirleyin. Windows, macOS ve Linux. Kişisel kullanım ücretsiz, iş için Pro.
+  <strong>Want more control? <a href="https://github.com/champdev-me/routengine">RoutEngine</a>, the upgraded commercial version of net-merge.</strong><br>
+  Choose the connection per app, add a fallback, and set a speed limit or data cap per app. Windows, macOS and Linux. Free for personal use, Pro for work.
 </p>
 
 <p align="center">
-  <img src="docs/demo.gif" width="600" alt="Speed test on a Mac with Wi-Fi and an Android phone: the net-merge menu shows both connections carrying traffic, and the download reaches about 326 Mbit/s.">
+  <img src="docs/demo.gif" width="600" alt="Speed test on a Mac with Wi‑Fi and an Android phone: the net-merge menu shows both connections carrying traffic, and the download reaches about 326 Mbit/s">
   <br>
-  <sub>Bir Mac ile Wi‑Fi + Android telefon. Menü iki bağlantının aynı anda çalıştığını gösteriyor. <a href="docs/demo.mp4">Tam 45 saniyelik videoyu izleyin.</a></sub>
+  <sub>A Mac with Wi‑Fi + Android phone. The menu shows both links carrying traffic. <a href="docs/demo.mp4">Watch the full 45-second video.</a></sub>
 </p>
 
 ## Türkçe kısa özet
 
-net-birlestir, birden fazla ağ bağlantısını aynı anda kullanarak toplam bant genişliğini artırır. Wi‑Fi, Ethernet, mobil veri ve telefon paylaşımı gibi farklı bağlantıları birleştirir; indirme ve oyun trafiği için daha yüksek hız sağlar.
+net-birlestir, birden fazla ağ bağlantısını aynı anda kullanarak toplam bant genişliğini artırır. Wi‑Fi, Ethernet, mobil veri ve telefon paylaşımı gibi farklı bağlantıları birleştirerek daha yüksek toplam veri aktarım hızı elde etmenizi sağlar.
 
-- Wi‑Fi, Ethernet ve telefon paylaşımı gibi birden fazla bağlantıyı birlikte kullanır.
-- Çoklu bağlantı açan uygulamalarda hız kazanırsınız.
+- Wi‑Fi, Ethernet, mobil veri ve telefon paylaşımı gibi birden fazla bağlantıyı aynı anda kullanır.
+- Çoklu bağlantı kullanan uygulamalarda hız kazanırsınız.
 - VPN, hesap oluşturma veya sunucu gerektirmez.
 - Windows, macOS, Linux ve Android için kullanılabilir.
-- Otomatik olarak daha hızlı bağlantıları daha fazla iş yüküyle kullanır.
+- Daha hızlı bağlantılar otomatik olarak daha fazla iş yüküyle kullanılır.
 
 Aşağıdaki bölümde orijinal İngilizce metin korunmuş şekilde yer almakta; Türkçe açıklama bu sayfanın varsayılan görünümüdür.
 
@@ -75,12 +75,12 @@ Aşağıdaki bölümde orijinal İngilizce metin korunmuş şekilde yer almakta;
 net-merge uses all your network adapters together. It works on **Windows, macOS and Linux**. It is free.
 There is no account, no server and no VPN.
 
-A real test with Wi-Fi + an Android USB tether + an iPhone hotspot, 9 downloads at once:
+A real test with Wi‑Fi + an Android USB tether + an iPhone hotspot, 9 downloads at once:
 **232-303 Mbit/s**. The fastest connection alone gave about 121 Mbit/s.
 
 | Windows: hover the icon | Windows: the menu | macOS: the menu bar |
 |---|---|---|
-| ![Tooltip: Merging, speed of each adapter and the total](docs/tray-tooltip.png) | ![Menu: total, each adapter's speed and flows, IPv6 option, Pause merging, Quit](docs/tray-menu.png) | ![macOS menu bar: net-merge is on](docs/menu-bar.png) |
+| ![Tooltip: Merging, speed of each adapter and the total](docs/tray-tooltip.png) | ![Menu: total, each adapter's speed and flows, IPv6 option, Pause merging, Quit](docs/tray-menu.png) | ![macOS menu bar: green merging icon, app name](docs/macos-menubar.png) |
 
 ## How it helps
 
@@ -101,13 +101,13 @@ spread over all your links.
 
 **macOS and Linux**: paste this into a terminal.
 
-```
+```sh
 curl -fsSL https://raw.githubusercontent.com/net-merge/net-merge/main/install.sh | sh
 ```
 
 **Windows**: paste this into PowerShell.
 
-```
+```powershell
 irm https://raw.githubusercontent.com/net-merge/net-merge/main/install.ps1 | iex
 ```
 
@@ -130,19 +130,19 @@ net-merge updates with the rest of your system. To start it at sign-in, tick *St
 
 **Homebrew** (macOS):
 
-```
+```sh
 brew install net-merge/tap/net-merge && sudo "$(brew --prefix)/bin/net-merge" install && net-merge tray
 ```
 
 **macOS without Homebrew**:
 
-```
+```sh
 curl -fsSL https://github.com/net-merge/net-merge/releases/latest/download/net-merge-macos-universal.tar.gz | tar -xz -C /tmp net-merge && sudo /tmp/net-merge install && net-merge tray
 ```
 
 **Debian, Ubuntu, Linux Mint, Pop!_OS, Raspberry Pi OS** (apt):
 
-```
+```sh
 curl -fsSL https://pkg.net-merge.org/apt/key.gpg | sudo tee /usr/share/keyrings/net-merge.gpg >/dev/null
 echo "deb [signed-by=/usr/share/keyrings/net-merge.gpg] https://pkg.net-merge.org/apt stable main" | sudo tee /etc/apt/sources.list.d/net-merge.list
 sudo apt update && sudo apt install -y net-merge
@@ -150,19 +150,19 @@ sudo apt update && sudo apt install -y net-merge
 
 **Fedora, RHEL, Rocky, Alma** (dnf):
 
-```
+```sh
 sudo curl -fsSL -o /etc/yum.repos.d/net-merge.repo https://pkg.net-merge.org/rpm/net-merge.repo && sudo dnf install -y net-merge
 ```
 
 **openSUSE** (zypper):
 
-```
+```sh
 sudo zypper addrepo https://pkg.net-merge.org/rpm/net-merge.repo && sudo zypper --gpg-auto-import-keys install -y net-merge
 ```
 
 **Arch, Manjaro, EndeavourOS** (pacman):
 
-```
+```sh
 curl -fsSL https://pkg.net-merge.org/apt/key.asc | sudo pacman-key --add - && sudo pacman-key --lsign-key 0168C7AB77721656904811AE904F61E7F4F1C2A1
 printf '\n[net-merge]\nSigLevel = Required\nServer = https://pkg.net-merge.org/arch/$arch\n' | sudo tee -a /etc/pacman.conf
 sudo pacman -Sy --noconfirm net-merge
@@ -170,21 +170,21 @@ sudo pacman -Sy --noconfirm net-merge
 
 **Alpine** (apk):
 
-```
+```sh
 sudo wget -O /etc/apk/keys/net-merge.rsa.pub https://pkg.net-merge.org/apk/net-merge.rsa.pub
 echo https://pkg.net-merge.org/apk | sudo tee -a /etc/apk/repositories && sudo apk add net-merge
 ```
 
 **Homebrew** (Linux):
 
-```
+```sh
 brew install net-merge/tap/net-merge && sudo setcap cap_net_admin,cap_net_raw+ep "$(readlink -f "$(brew --prefix)/bin/net-merge")"
 ```
 
 **Any other Linux** (any CPU):
 
-```
-curl -fsSL https://github.com/net-merge/net-merge/releases/latest/download/net-merge-linux-$(uname -m).tar.gz | tar -xz -C /tmp net-merge && sudo install -m 755 /tmp/net-merge /usr/local/bin/ && net-merge tray
+```sh
+curl -fsSL https://github.com/net-merge/net-merge/releases/latest/download/net-merge-linux-$(uname -m).tar.gz | tar -xz -C /tmp net-merge && sudo install -m 755 /tmp/net-merge /usr/local/bin/ && ...
 ```
 
 **Windows by hand**: download [net-merge-setup.exe](https://github.com/net-merge/net-merge/releases/latest/download/net-merge-setup.exe)
@@ -203,7 +203,7 @@ Then start it with `net-merge tray` (Linux, macOS) or from the Start menu (Windo
 - **No password prompts:** the Linux packages give net-merge the network rights it needs (`setcap`), and on
   macOS `net-merge install` adds one rule so that only `net-merge tray` can run as root without a password.
 - **Linux tray icon:** needs a desktop with StatusNotifierItem support: KDE, XFCE, Cinnamon, LXQt, Budgie,
-  or GNOME with the *AppIndicator and KStatusNotifierItem Support* extension (Ubuntu already has it).
+  or GNOME with the *AppIndicator and KStatusNotifierItem Support* extension.
 - **Firewall:** if it blocks unknown traffic, trust the `net-merge` interface
   (for example `firewall-cmd --zone=trusted --add-interface=net-merge`).
 - **Signed repositories:** apt, dnf, zypper and pacman use the key in
@@ -213,8 +213,7 @@ Then start it with `net-merge tray` (Linux, macOS) or from the Start menu (Windo
 
 ## Android
 
-net-merge for Android uses Wi-Fi and mobile data at the same time. No root, no account, no server. It is
-new (beta).
+net-merge for Android uses Wi‑Fi and mobile data at the same time. No root, no account, no server. It is new (beta).
 
 1. On your phone, download
    [net-merge-android.apk](https://github.com/net-merge/android/releases/latest/download/net-merge-android.apk).
@@ -236,13 +235,13 @@ It needs Android 8.0 or newer.
 **macOS and Linux**: paste this into a terminal. It stops net-merge and removes it the way it was
 installed (Homebrew, apt, dnf, zypper, apk, pacman or the download), with its repository and key.
 
-```
+```sh
 curl -fsSL https://raw.githubusercontent.com/net-merge/net-merge/main/install.sh | sh -s -- uninstall
 ```
 
 **Windows**: paste this into PowerShell, or use *Settings > Apps > Installed apps > net-merge > Uninstall*.
 
-```
+```powershell
 & "$env:ProgramFiles\net-merge\net-merge.exe" quit; Start-Process "$env:ProgramFiles\net-merge\unins000.exe" '/SILENT' -Verb RunAs -Wait
 ```
 
@@ -257,55 +256,55 @@ Each block first stops the tray and turns off start at sign-in, then removes net
 
 **Homebrew** (macOS):
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo net-merge uninstall; brew uninstall net-merge && brew untap net-merge/tap
 ```
 
 **macOS without Homebrew**:
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo net-merge uninstall
 ```
 
 **Debian, Ubuntu, Linux Mint, Pop!_OS, Raspberry Pi OS** (apt):
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo apt remove -y net-merge && sudo rm -f /etc/apt/sources.list.d/net-merge.list /usr/share/keyrings/net-merge.gpg
 ```
 
 **Fedora, RHEL, Rocky, Alma** (dnf):
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo dnf remove -y net-merge && sudo rm -f /etc/yum.repos.d/net-merge.repo
 ```
 
 **openSUSE** (zypper):
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo zypper remove -y net-merge && sudo zypper removerepo net-merge
 ```
 
 **Arch, Manjaro, EndeavourOS** (pacman):
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo pacman -R --noconfirm net-merge && sudo sed -i '/^\[net-merge\]$/,/^Server = .*net-merge/d' /etc/pacman.conf && sudo pacman-key --delete 0168C7AB77721656904811AE904F61E7F4F1C2A1
 ```
 
 **Alpine** (apk):
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo apk del net-merge && sudo sed -i -e '\#pkg.net-merge.org/apk#d' -e '\#rohit267.github.io/net-merge/apk#d' /etc/apk/repositories && sudo rm -f /etc/apk/keys/net-merge.rsa.pub
 ```
 
 **Homebrew** (Linux):
 
-```
+```sh
 net-merge quit; net-merge autostart off; brew uninstall net-merge && brew untap net-merge/tap
 ```
 
 **Any other Linux** (the download):
 
-```
+```sh
 net-merge quit; net-merge autostart off; sudo rm -f /usr/local/bin/net-merge
 ```
 
@@ -332,8 +331,8 @@ To try it without installing: `sudo nix run github:net-merge/net-merge -- run`.
 
 ## Add a second connection
 
-net-merge needs **two or more** real connections. Use Wi-Fi plus one of these: a phone (USB tethering or
-hotspot), an Ethernet cable, or a second Wi-Fi. Plug it in and net-merge adds it within a few seconds.
+net-merge needs **two or more** real connections. Use Wi‑Fi plus one of these: a phone (USB tethering or
+hotspot), an Ethernet cable, or a second Wi‑Fi. Plug it in and net-merge adds it within a few seconds.
 When you unplug it, its connections move to the others.
 
 **Windows and Linux:** plug the phone in and turn on *USB tethering* (Android) or *Personal Hotspot*
@@ -402,8 +401,8 @@ Tips:
 <summary><strong>A second connection does not make things faster</strong></summary>
 <br>
 
-You only gain speed when each connection reaches the internet by its own path. Wi-Fi from your home
-router plus a phone on mobile data works. Wi-Fi and Ethernet plugged into the **same router** do not: they
+You only gain speed when each connection reaches the internet by its own path. Wi‑Fi from your home
+router plus a phone on mobile data works. Wi‑Fi and Ethernet plugged into the **same router** do not: they
 share one internet line, so the total stays the same.
 
 Also remember that one connection always uses one link. Many parallel connections (Steam, browsers,
@@ -431,7 +430,7 @@ The package repositories moved to `pkg.net-merge.org`. If you set them up before
 not updated net-merge since, your system still uses the old address, which is gone. Point it at the new one:
 
 ```sh
-sudo sed -i 's#https://rohit267.github.io/net-merge#https://pkg.net-merge.org#g' $(ls /etc/apt/sources.list.d/net-merge.list /etc/yum.repos.d/net-merge.repo /etc/zypp/repos.d/net-merge.repo /etc/apt/sources.list.d/net-merge.list 2>/dev/null)
+sudo sed -i 's#https://rohit267.github.io/net-merge#https://pkg.net-merge.org#g' $(ls /etc/apt/sources.list.d/net-merge.list /etc/yum.repos.d/net-merge.repo /etc/zypp/repos.d/net-merge.repo /etc/apt/sources.list.d/net-merge.list /etc/yum.repos.d/net-merge.repo)
 ```
 
 Then update as normal (`sudo apt update`, `sudo dnf upgrade`, `sudo zypper refresh`, `sudo apk update` or
@@ -465,7 +464,7 @@ Start net-merge first, then connect the phone. If it vanishes, click **Apply** i
 <summary><strong>Windows uses only one network</strong></summary>
 <br>
 
-Windows can switch Wi-Fi off when Ethernet is plugged in. Open the Group Policy Editor (`gpedit.msc`),
+Windows can switch Wi‑Fi off when Ethernet is plugged in. Open the Group Policy Editor (`gpedit.msc`),
 go to *Computer Configuration > Administrative Templates > Network > Windows Connection Manager*, and set
 **Minimize the number of simultaneous connections to the Internet or a Windows domain** to **Disabled**.
 </details>
@@ -512,7 +511,7 @@ limit of splitting connections over several links.
 
 ## Commands
 
-```
+```sh
 net-merge tray            tray icon (the normal way to run it)
 net-merge on | off        start / pause merging in the running tray
 net-merge quit            pause and close the tray
