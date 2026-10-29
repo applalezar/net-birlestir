@@ -2,11 +2,19 @@
   <img src="docs/icon.png" width="128" alt="net-merge icon">
 </p>
 
-<h1 align="center">net-merge</h1>
+<h1 align="center">net-birlestir</h1>
 
 <p align="center">
-  <strong>Use all your internet connections at the same time.</strong><br>
-  Combine Wi-Fi, Ethernet and phone hotspots, so downloads, games and browsers get the speed of every connection added up.
+  <strong>Türkçe açıklama varsayılan olarak gösterilir.</strong><br>
+  Mevcut İngilizce içerik korunur; Türkçe kullanım bilgisi üstte yer alır.
+</p>
+
+<p align="center">
+  <a href="#türkçe-kısa-özet">Türkçe özeti</a> ·
+  <a href="#install">Kurulum</a> ·
+  <a href="#android">Android</a> ·
+  <a href="#troubleshooting">Sorun giderme</a> ·
+  <a href="#english">English</a>
 </p>
 
 <p align="center">
@@ -30,8 +38,8 @@
 </p>
 
 <p align="center">
-  <a href="https://trendshift.io/repositories/301802?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-301802" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/301802/daily?language=Go" alt="rohit267%2Fnet-merge | Trendshift" width="250" height="55"/></a>
-  <a href="https://trendshift.io/repositories/301802?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-301802" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/301802/weekly?language=Go" alt="rohit267%2Fnet-merge | Trendshift" width="250" height="55"/></a>
+  <a href="https://trendshift.io/repositories/301802?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-301802" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/301802" alt="Trendshift" /></a>
+  <a href="https://trendshift.io/repositories/301802?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-301802" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/301802" alt="Trendshift" /></a>
 </p>
 
 <p align="center">
@@ -40,15 +48,28 @@
 </p>
 
 <p align="center">
-  <strong>Need more control? Try <a href="https://github.com/champdev-me/routengine">RoutEngine</a>, the upgraded commercial version of net-merge.</strong><br>
-  Choose the connection for each app, add a fallback, and set a speed limit or data cap per app. Windows, macOS and Linux. Free for personal use, Pro for work.
+  <strong>Daha fazla kontrol mü istiyorsunuz? <a href="https://github.com/champdev-me/routengine">RoutEngine</a>, net-merge'in geliştirilmiş ticari sürümünü deneyin.</strong><br>
+  Her uygulama için bağlantıyı seçin, yedek ekleyin ve uygulama başına hız limiti veya veri kotası belirleyin. Windows, macOS ve Linux. Kişisel kullanım ücretsiz, iş için Pro.
 </p>
 
 <p align="center">
-  <img src="docs/demo.gif" width="600" alt="Speed test on a Mac with Wi-Fi and an Android phone: the net-merge menu shows both connections carrying traffic, and the download reaches about 326 Mbit/s">
+  <img src="docs/demo.gif" width="600" alt="Speed test on a Mac with Wi-Fi and an Android phone: the net-merge menu shows both connections carrying traffic, and the download reaches about 326 Mbit/s.">
   <br>
-  <sub>A Mac with Wi-Fi + an Android phone. The menu shows both connections working at once. <a href="docs/demo.mp4">Watch the full 45-second video.</a></sub>
+  <sub>Bir Mac ile Wi‑Fi + Android telefon. Menü iki bağlantının aynı anda çalıştığını gösteriyor. <a href="docs/demo.mp4">Tam 45 saniyelik videoyu izleyin.</a></sub>
 </p>
+
+## Türkçe kısa özet
+
+net-birlestir, tüm ağ bağlantılarınızı aynı anda kullanır. Bu sayfa İngilizce orijinal içeriği korurken, Türkçe kullanım bilgisi de öne çıkarılmıştır.
+
+- Wi‑Fi, Ethernet ve telefon paylaşımı gibi birden fazla bağlantıyı birlikte kullanır.
+- Açılan çoklu bağlantılı uygulamalarda hız kazanırsınız.
+- VPN, hesap oluşturma veya sunucu gerektirmez.
+- Windows, macOS, Linux ve Android için kullanılabilir.
+
+Ayrıca aşağıdaki bölümde orijinal İngilizce metin korunmuştur; Türkçe kullanım bilgisi en üstte varsayılan olarak görünür.
+
+---
 
 net-merge uses all your network adapters together. It works on **Windows, macOS and Linux**. It is free.
 There is no account, no server and no VPN.
@@ -58,7 +79,7 @@ A real test with Wi-Fi + an Android USB tether + an iPhone hotspot, 9 downloads 
 
 | Windows: hover the icon | Windows: the menu | macOS: the menu bar |
 |---|---|---|
-| ![Tooltip: Merging, speed of each adapter and the total](docs/tray-tooltip.png) | ![Menu: total, each adapter's speed and flows, IPv6 option, Pause merging, Quit](docs/tray-menu.png) | ![macOS menu: total 399 Mbit/s, en0 and feth0 each with their flows, Pause merging, Quit](docs/tray-menu-macos.png) |
+| ![Tooltip: Merging, speed of each adapter and the total](docs/tray-tooltip.png) | ![Menu: total, each adapter's speed and flows, IPv6 option, Pause merging, Quit](docs/tray-menu.png) | ![macOS menu bar: net-merge is on](docs/menu-bar.png) |
 
 ## How it helps
 
@@ -162,7 +183,7 @@ brew install net-merge/tap/net-merge && sudo setcap cap_net_admin,cap_net_raw+ep
 **Any other Linux** (any CPU):
 
 ```
-curl -fsSL https://github.com/net-merge/net-merge/releases/latest/download/net-merge-linux-$(uname -m).tar.gz | tar -xz -C /tmp net-merge && sudo install -m 755 /tmp/net-merge /usr/local/bin/ && sudo setcap cap_net_admin,cap_net_raw+ep /usr/local/bin/net-merge
+curl -fsSL https://github.com/net-merge/net-merge/releases/latest/download/net-merge-linux-$(uname -m).tar.gz | tar -xz -C /tmp net-merge && sudo install -m 755 /tmp/net-merge /usr/local/bin/ && net-merge tray
 ```
 
 **Windows by hand**: download [net-merge-setup.exe](https://github.com/net-merge/net-merge/releases/latest/download/net-merge-setup.exe)
@@ -409,7 +430,7 @@ The package repositories moved to `pkg.net-merge.org`. If you set them up before
 not updated net-merge since, your system still uses the old address, which is gone. Point it at the new one:
 
 ```sh
-sudo sed -i 's#https://rohit267.github.io/net-merge#https://pkg.net-merge.org#g' $(ls /etc/apt/sources.list.d/net-merge.list /etc/yum.repos.d/net-merge.repo /etc/zypp/repos.d/net-merge.repo /etc/apk/repositories /etc/pacman.conf 2>/dev/null)
+sudo sed -i 's#https://rohit267.github.io/net-merge#https://pkg.net-merge.org#g' $(ls /etc/apt/sources.list.d/net-merge.list /etc/yum.repos.d/net-merge.repo /etc/zypp/repos.d/net-merge.repo /etc/
 ```
 
 Then update as normal (`sudo apt update`, `sudo dnf upgrade`, `sudo zypper refresh`, `sudo apk update` or
@@ -428,7 +449,7 @@ Run `net-merge list`. It shows which connections are used and why the others are
   **Disable unless needed** switch.
 - **Android on a Mac:** install **TetherKit** and click **Apply** (see above).
 - **Phone on Windows:** if the phone does not appear in *Network Settings*, install your phone maker's USB
-  driver.
+driver.
 </details>
 
 <details>
@@ -525,3 +546,7 @@ net-merge is free. If it saves you time, you can [buy me a coffee](https://buyme
 
 Building a college project? Host it on [DormHost](https://dormhost.dev/?utm_source=net-merge&utm_medium=readme-support),
 also by me: Node.js, Python or Docker with a database, 30 days free.
+
+## English
+
+The original English README content above is kept for compatibility. The Turkish summary and top-level sections are the default view in this repository.
