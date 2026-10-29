@@ -5,8 +5,8 @@
 <h1 align="center">net-birlestir</h1>
 
 <p align="center">
-  <strong>Türkçe açıklama varsayılan olarak gösterilir.</strong><br>
-  Mevcut İngilizce içerik korunur; Türkçe kullanım bilgisi üstte yer alır.
+  <strong>Windows, macOS, Linux ve Android işletim sistemlerinde tüm internet bağlantılarınızı aynı anda kullanın.</strong><br>
+  Wi‑Fi, Ethernet, mobil veri ve telefon internet paylaşımı üzerinden bağlantı başına yük dengeleme.
 </p>
 
 <p align="center">
@@ -60,14 +60,15 @@
 
 ## Türkçe kısa özet
 
-net-birlestir, tüm ağ bağlantılarınızı aynı anda kullanır. Bu sayfa İngilizce orijinal içeriği korurken, Türkçe kullanım bilgisi de öne çıkarılmıştır.
+net-birlestir, birden fazla ağ bağlantısını aynı anda kullanarak toplam bant genişliğini artırır. Wi‑Fi, Ethernet, mobil veri ve telefon paylaşımı gibi farklı bağlantıları birleştirir; indirme ve oyun trafiği için daha yüksek hız sağlar.
 
 - Wi‑Fi, Ethernet ve telefon paylaşımı gibi birden fazla bağlantıyı birlikte kullanır.
-- Açılan çoklu bağlantılı uygulamalarda hız kazanırsınız.
+- Çoklu bağlantı açan uygulamalarda hız kazanırsınız.
 - VPN, hesap oluşturma veya sunucu gerektirmez.
 - Windows, macOS, Linux ve Android için kullanılabilir.
+- Otomatik olarak daha hızlı bağlantıları daha fazla iş yüküyle kullanır.
 
-Ayrıca aşağıdaki bölümde orijinal İngilizce metin korunmuştur; Türkçe kullanım bilgisi en üstte varsayılan olarak görünür.
+Aşağıdaki bölümde orijinal İngilizce metin korunmuş şekilde yer almakta; Türkçe açıklama bu sayfanın varsayılan görünümüdür.
 
 ---
 
@@ -430,7 +431,7 @@ The package repositories moved to `pkg.net-merge.org`. If you set them up before
 not updated net-merge since, your system still uses the old address, which is gone. Point it at the new one:
 
 ```sh
-sudo sed -i 's#https://rohit267.github.io/net-merge#https://pkg.net-merge.org#g' $(ls /etc/apt/sources.list.d/net-merge.list /etc/yum.repos.d/net-merge.repo /etc/zypp/repos.d/net-merge.repo /etc/
+sudo sed -i 's#https://rohit267.github.io/net-merge#https://pkg.net-merge.org#g' $(ls /etc/apt/sources.list.d/net-merge.list /etc/yum.repos.d/net-merge.repo /etc/zypp/repos.d/net-merge.repo /etc/apt/sources.list.d/net-merge.list 2>/dev/null)
 ```
 
 Then update as normal (`sudo apt update`, `sudo dnf upgrade`, `sudo zypper refresh`, `sudo apk update` or
